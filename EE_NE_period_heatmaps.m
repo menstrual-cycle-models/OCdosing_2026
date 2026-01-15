@@ -22,23 +22,19 @@ clc; clear; close all;
 tab = readcell("pars.xlsx","Range","A:B");
 pars = cell2mat(tab(2:end,2));
 
-pars(1) = pars(1)*1.5; pars(15) = pars(15)*0.5;
+% pars(1) = pars(1)*1.5; pars(15) = pars(15)*0.5;
 
 %%%%% SPECIFICATIONS %%%%%
 togSaveData = 1; % 1 = save data in data folder
 togSaveFig = 1; % 1 = save fig in figures folder
 
-% % EE and NE doses
-% edose_mcg = 20; edose = edose_mcg*1e6; % mcg to pg
-% pdose_mcg = 1; pdose = pdose_mcg*1e6; % mg to ng
-
 % Treatment schedule
-numTreatmentCycles = 60;
+numTreatmentCycles = 5;
 treatmentPeriod = 28; % period length of treatment cycle (default = 28)
 repeat_placebo_days = 22:28; %[]; % repeated days off for each cycle
 
 % heatmap NxN grid
-N = 5; ee_max = 35; ne_max = 3;
+N = 10; ee_max = 35; ne_max = 3;
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% create full vector of placebo days, if specified
