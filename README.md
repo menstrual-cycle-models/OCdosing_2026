@@ -3,7 +3,7 @@ MATLAB Code for "Modeling the effects of hormonal oral contraceptive dosing on c
 Authors: Ruby Kim, Lihong Zhao, Lucy S. Oremland, Natasha Wozniak, Heather Z. Brooks, Elissa J. Schwartz, Erica J. Graham, and Lisette de Pillis
 
 Getting Started
-    Run startup.m to add necessary file paths.
+- Run startup.m to add necessary file paths.
 
 Repository Structure
 - main_driver.m
